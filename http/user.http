@@ -1,0 +1,11 @@
+GET http://localhost:8080/user
+Accept: application/json
+
+
+###
+GET http://localhost:8080/user?persist=true
+Accept: application/json
+
+###
+GET http://localhost:8080/users
+Accept: application/json
