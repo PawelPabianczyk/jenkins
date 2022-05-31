@@ -9,21 +9,21 @@ class JenkinsPawelPabianczykApplicationTests {
 
   @Test
   void getUser() {
-    RestAssured.get("http://localhost:8080/user").then().statusCode(200);
+    RestAssured.get("http://localhost:8081/user").then().statusCode(200);
   }
 
   @Test
   void getUserWhenPersistTrue() {
-    RestAssured.get("http://localhost:8080/user?persist=true").then().statusCode(200);
+    RestAssured.get("http://localhost:8081/user?persist=true").then().statusCode(200);
   }
 
   @Test
   void getUserWhenPersistFalse() {
-    RestAssured.get("http://localhost:8080/user?persist=false").then().statusCode(200);
+    RestAssured.get("http://localhost:8081/user?persist=false").then().statusCode(200);
   }
 
   @Test
   void getUsers() {
-    RestAssured.get("http://localhost:8080/users").then().statusCode(200);
+    RestAssured.get("http://localhost:8081/users").then().statusCode(200);
   }
 }
